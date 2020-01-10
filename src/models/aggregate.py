@@ -16,3 +16,11 @@ class Aggregate:
 
         self.valor = valor
         self.total = total
+
+    @staticmethod
+    def parse(dictionary):
+
+        valor = dictionary.get('valor', 0)
+        total = dictionary.get('total', 0)
+
+        return Aggregate(valor, total)
