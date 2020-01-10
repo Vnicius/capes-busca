@@ -49,3 +49,35 @@ class Work:
         self.biblioteca = biblioteca
         self.grau_academico = grau_academico
         self.link = link
+
+    @staticmethod
+    def parse(dictionary):
+
+        id = dictionary.get('id', '')
+        instituicao = dictionary.get('instituicao', '')
+        nome_programa = dictionary.get('nomePrograma', '')
+        municipio_programa = dictionary.get(
+            'municipioPrograma', '')
+        titulo = dictionary.get('titulo', '')
+        autor = dictionary.get('autor', '')
+        data_defesa = dictionary.get('dataDefesa', '')
+        volumes = dictionary.get('volumes', 0)
+        paginas = dictionary.get('paginas', 0)
+        biblioteca = dictionary.get('biblioteca', '')
+        grau_academico = dictionary.get('grauAcademico', '')
+        link = dictionary.get('link', '')
+
+        return Work(
+            id=id,
+            instituicao=instituicao,
+            nome_programa=nome_programa,
+            municipio_programa=municipio_programa,
+            titulo=titulo,
+            autor=autor,
+            data_defesa=data_defesa,
+            volumes=volumes,
+            paginas=paginas,
+            biblioteca=biblioteca,
+            grau_academico=grau_academico,
+            link=link,
+        )
