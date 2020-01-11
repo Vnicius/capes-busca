@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import json
 import requests
-from src.response import Response
+from src.searchresult import SearchResult
 
 SEARCH_URL = "https://catalogodeteses.capes.gov.br/catalogo-teses/rest/busca"
 
@@ -29,4 +29,4 @@ class Request:
         except ConnectionError:
             pass
 
-        return Response(response_json)
+        return SearchResult(response_json)
