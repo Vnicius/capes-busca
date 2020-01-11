@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-from src.models.work import Work
-from src.models.aggregation import Aggregation
+from capesbusca.models import Work, Aggregation
 
 
 class SearchResult:

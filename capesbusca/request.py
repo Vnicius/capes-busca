@@ -5,8 +5,7 @@ import json
 
 import requests
 
-from src.searchresult import SearchResult
-from src.searcherror import SearchError
+from capesbusca import SearchResult, SearchError
 
 SEARCH_URL = "https://catalogodeteses.capes.gov.br/catalogo-teses/rest/busca"
 AGGREGATIONS_URL = SEARCH_URL + \
