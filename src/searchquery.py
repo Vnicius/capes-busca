@@ -21,3 +21,13 @@ class SearchQuery:
         self.filters = filters
         self.page = page
         self.page_size = page_size
+
+    def json(self):
+        '''	
+            Cria o JSON da busca	
+        '''
+
+        return dumps({"termo": self.term,
+                      "filtros": self.filters,
+                      "pagina": self.page,
+                      "registrosPorPagina": self.page_size})
