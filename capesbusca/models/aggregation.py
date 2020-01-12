@@ -28,6 +28,15 @@ class Aggregation:
 
     @staticmethod
     def parse(dictionary):
+        '''
+            Reliza o parser de dados em dict para o objeto
+
+            Params:
+                dictionary (dict): dicionário com os dados
+
+            Returns:
+                Aggregation
+        '''
 
         campo = dictionary.get('campo', "")
         total = dictionary.get('total', "")

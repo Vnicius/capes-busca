@@ -43,6 +43,13 @@ def search(search_query, full_aggregations=False):
 
 
 def get_full_aggregations(search_query, initial_aggregations):
+    '''
+        Tentar pegar todos os agregados das agregações
+
+        Params:
+            search_query (SearchQuery): query de busca
+            initial_aggregation (dict): valor inicial das agregações
+    '''
 
     aggregations = deepcopy(initial_aggregations)
 
