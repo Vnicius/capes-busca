@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-from src.models.aggregate import Aggregate
+from capesbusca.models.aggregate import Aggregate
 
 
 class Aggregation:
