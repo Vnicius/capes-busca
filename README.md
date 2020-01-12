@@ -2,6 +2,12 @@
 
 Biblioteca para realizar busca de termos no catálogo de teses e dissertações da Capes (https://catalogodeteses.capes.gov.br/catalogo-teses)
 
+## Instalação
+
+```
+    $ pip install capesbusca
+```
+
 ## Requisitos
 
 - Python 3
