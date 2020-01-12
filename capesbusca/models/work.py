@@ -58,6 +58,15 @@ class Work:
 
     @staticmethod
     def parse(dictionary):
+        '''
+            Reliza o parser de dados em dict para o objeto
+
+            Params:
+                dictionary (dict): dicionário com os dados
+
+            Returns:
+                Work
+        '''
 
         id = dictionary.get('id', '')
         instituicao = dictionary.get('instituicao', '')

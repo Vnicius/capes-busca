@@ -25,6 +25,15 @@ class Aggregate:
 
     @staticmethod
     def parse(dictionary):
+        '''
+            Reliza o parser de dados em dict para o objeto
+
+            Params:
+                dictionary (dict): dicionário com os dados
+
+            Returns:
+                Aggregate
+        '''
 
         valor = dictionary.get('valor', 0)
         total = dictionary.get('total', 0)
