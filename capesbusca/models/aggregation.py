@@ -20,6 +20,12 @@ class Aggregation:
         self.total = total
         self.agregados = agregados
 
+    def __repr__(self):
+        return str(vars(self))
+
+    def __str__(self):
+        return str(vars(self))
+
     @staticmethod
     def parse(dictionary):
 

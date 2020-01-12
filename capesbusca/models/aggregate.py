@@ -17,6 +17,12 @@ class Aggregate:
         self.valor = valor
         self.total = total
 
+    def __repr__(self):
+        return str(vars(self))
+
+    def __str__(self):
+        return str(vars(self))
+
     @staticmethod
     def parse(dictionary):
 
