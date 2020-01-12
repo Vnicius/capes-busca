@@ -30,6 +30,18 @@ class SearchResult:
 
         self.__parse_json()
 
+    def __repr__(self):
+        data_dict = vars(self)
+        data_dict.pop('result_json')
+
+        return str(vars(self))
+
+    def __str__(self):
+        data_dict = vars(self)
+        data_dict.pop('result_json')
+
+        return str(vars(self))
+
     def __parse_json(self):
         '''
             Realiza o parse da resposta da requisição para os modelos

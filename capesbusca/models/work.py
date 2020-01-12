@@ -50,6 +50,12 @@ class Work:
         self.grau_academico = grau_academico
         self.link = link
 
+    def __repr__(self):
+        return str(vars(self))
+
+    def __str__(self):
+        return str(vars(self))
+
     @staticmethod
     def parse(dictionary):
 
